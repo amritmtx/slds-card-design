@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="styles/salesforce-lightning-design-system.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>First SLDS Card</title>
+  </head>
+  <body>
+    <div
+      class="slds-grid slds-grid_align-center slds-grid--vertical-align-center height--full"
+    >
+      <div
+        class="slds-col slds-size--11-of-12 slds-small-size--6-of-12 slds-medium-size--5-of-12 slds-large-size--4-of-12"
+      >
+        <form>
+          <article class="slds-card" role="main">
+            <div class="slds-card__header slds-grid">
+              <header
+                class="slds-media slds-media_center slds-has-flexi-truncate"
+              >
+                <div class="slds-media__body">
+                  <h2 class="slds-card__header-title">Add a New Vehicle</h2>
+                </div>
+                <div class="slds-no-flex">
+                  <button type="reset" class="slds-button">
+                    <span class="slds-icon_container" title="Refresh">
+                      <svg
+                        class="slds-icon slds-icon-text-default slds-icon--x-small"
+                        aria-hidden="true"
+                      >
+                        <use
+                          xlink:href="icons/utility-sprite/svg/symbols.svg#refresh"
+                        ></use>
+                      </svg>
+                      <span class="slds-assistive-text">Refresh</span>
+                    </span>
+                  </button>
+                </div>
+              </header>
+            </div>
+
+            <div class="slds-card__body slds-card__body_inner">
+              <div class="slds-grid slds-grid--align-center">
+                <span
+                  class="slds-avatar slds-avatar_circle avatar--extra-large"
+                >
+                  <span
+                    class="slds-icon_container slds-icon-standard-user color--grey"
+                    title="User Image"
+                  >
+                    <svg
+                      class="slds-icon avatar--extra-large"
+                      aria-hidden="true"
+                    >
+                      <use
+                        xlink:href="icons/standard-sprite/svg/symbols.svg#user"
+                      ></use>
+                    </svg>
+                    <span class="slds-assistive-text">User Image</span>
+                  </span>
+                </span>
+              </div>
+              <div class="slds-grid slds-m-vertical--small">
+                <div class="slds-size--1-of-1">
+                  <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="license-plate">
+                      <abbr class="slds-required" title="required">*</abbr
+                      >License Plate
+                    </label>
+                    <div class="slds-form-element__control">
+                      <input
+                        type="text"
+                        id="license-plate"
+                        required="true"
+                        class="slds-input"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="slds-grid slds-wrap slds-gutters slds-m-vertical--small"
+              >
+                <div
+                  class="slds-col slds-size--1-of-1 slds-medium-size--6-of-12"
+                >
+                  <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="state">
+                      <abbr class="slds-required" title="required">*</abbr>State
+                    </label>
+                    <div class="slds-form-element__control">
+                      <input
+                        type="text"
+                        id="state"
+                        required="true"
+                        class="slds-input"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slds-col slds-size--1-of-1 slds-medium-size--6-of-12"
+                >
+                  <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="color">
+                      <abbr class="slds-required" title="required">*</abbr>Color
+                    </label>
+                    <div class="slds-form-element__control">
+                      <input
+                        type="text"
+                        id="color"
+                        required="true"
+                        class="slds-input"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="slds-grid slds-wrap slds-gutters slds-m-vertical--small"
+              >
+                <div
+                  class="slds-col slds-size--1-of-1 slds-medium-size--6-of-12"
+                >
+                  <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="make">
+                      Make
+                    </label>
+                    <div class="slds-form-element__control">
+                      <input type="text" id="make" class="slds-input" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slds-col slds-size--1-of-1 slds-medium-size--6-of-12"
+                >
+                  <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="modal">
+                      Modal
+                    </label>
+                    <div class="slds-form-element__control">
+                      <input type="text" id="modal" class="slds-input" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slds-grid slds-m-vertical--small">
+                <div class="slds-col slds-size--1-of-1">
+                  <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="reason">
+                      Reason
+                    </label>
+                    <div class="slds-form-element__control">
+                      <textarea
+                        id="reason"
+                        placeholder="Placeholder text…"
+                        class="slds-textarea"
+                        rows="5"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slds-grid slds-grid_align-end">
+                <button type="submit" class="slds-button slds-button_brand">
+                  Save
+                </button>
+              </div>
+            </div>
+          </article>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

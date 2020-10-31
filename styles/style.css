@@ -1,0 +1,12 @@
+.height--full {
+  height: 100vh;
+}
+
+.avatar--extra-large {
+  width: 8rem;
+  height: 8rem;
+}
+
+.color--grey {
+  background-color: grey;
+}
